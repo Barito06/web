@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <link rel="stylesheet" href="EstiloForm.css">
+</head>
+<body>
+        <header>
+            
+        </header>
+        <div class="ubicarForm">
+            <form novalidate onsubmit="return validarDato()">
+                <h1>Ingrese sus datos:</h1>
+            <div>
+                <label for="nom">Nombre:<span class="obligatorio">*</span></label>
+                <input type="text" id="nom" name="Nombre" placeholder="Ingrese Nombre"><br>
+            </div>
+            <div>
+                <label for="apell">Apellido:<span class="obligatorio">*</span></label>
+                <input type="text" id="apell" name="Apellido" placeholder="ingrese Nombre"><br>
+            </div>
+            <div>
+                <label for="correo">Email:<span class="obligatorio">*</span></label>
+                <input type="email" id="correo" name="CorreoElectronico" placeholder="Ingrese Email"><br>
+            </div>
+            <div>
+                <label for="tel">Numero Telefonico:<span class="obligatorio">*</span></label>
+                <input type="tel" id="tel" name="Numero" placeholder="Ingrese su nro. de telefono"><br>
+            </div>
+            <div>
+                <button type="submit" class="botonEnviar"> Enviar </button>
+                <button type="reset" onclick="return limpiar()" class="botonLimpiar"> Limpiar </button>
+            </div>
+                
+                <ol id="comentarios"></ol>
+                <ul id="listaErrores"></ul>
+            </form>
+        </div>
+        <script src="finalValidacion.js"></script>
+        
+</body>
+</html>

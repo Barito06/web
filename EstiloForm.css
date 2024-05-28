@@ -1,0 +1,65 @@
+body{
+background-color: rgb(71, 57, 57);
+display: block;
+height: 1000px;
+}
+header{
+
+
+}
+h1{
+    text-align: center;
+}
+form{
+    background-color: white;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    align-items: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.error{
+    border: 2px solid rgb(141, 28, 28);
+    background-color: rgba(226, 8, 8, 0.075);
+}
+.correcto{
+    border: 2px solid green;
+    background-color: rgba(0, 128, 0, 0.11);
+    backdrop-filter: blur(5px);
+}
+.ubicarForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    color: black;
+    font-size: 17px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(139, 136, 136);
+    display: block;
+    height: 40px;
+    width: 300px;
+    padding: 15px 15px 15px 10px;
+}
+label{
+    color: rgb(5, 27, 26);
+    font-size: 20px;
+}
+.obligatorio{
+    color: red;
+}
+.botonEnviar{
+    font-size: 20px;
+    margin-right: 80px; 
+    margin-top: 30px;
+}
+.botonLimpiar{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 80px; 
+}
